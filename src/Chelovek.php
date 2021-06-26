@@ -1,5 +1,7 @@
 <?php
 
+namespace Bank;
+
 class Chelovek {
     private $name;
     private $money;

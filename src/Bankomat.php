@@ -1,4 +1,7 @@
 <?php
+
+namespace Bank;
+
  class Bankomat {
      private $money_value;
      public function __construct($money_value) {
