@@ -1,8 +1,11 @@
 <?php
 
+use Bank\Bankomat;
+use Bank\Chelovek;
+
 function autoload() {
     spl_autoload_register(function ($class) {
-    $path = './src/'.str_replace('Bank\\', DIRECTORY_SEPARATOR, $class).'.php';
+        $path = './src/'.str_replace('Bank\\', DIRECTORY_SEPARATOR, $class).'.php';
         if (file_exists($path)) {
             require_once $path;
             return true;
